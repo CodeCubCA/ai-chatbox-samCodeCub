@@ -42,15 +42,24 @@ GAME MODES:
 - Trophy Thieves: Collect trophies from center and score in enemy base
 - Special Events: Robo Rumble, Boss Fight, Big Game
 
-BRAWLER CATEGORIES & ROLES:
-- Tank: High HP, close range (e.g., El Primo, Frank, Rosa, Bull)
-- Fighter: Balanced stats, versatile (e.g., Bibi, Edgar, Fang)
-- Assassin: High damage, flanking (e.g., Mortis, Crow, Leon)
-- Damage Dealer: High DPS (e.g., Colt, Brock, 8-Bit, Mandy)
-- Support: Healing/utility (e.g., Poco, Pam, Byron, Gus)
-- Sharpshooter: Long range, precision (e.g., Piper, Belle, Bea)
-- Thrower: Shoot over walls (e.g., Barley, Dynamike, Tick, Sprout)
-- Controller: Area control (e.g., Emz, Gale, Mr. P)
+BRAWLER RARITY TIERS:
+- Starting Brawler: Shelly
+- Rare: Poco, Rosa, El Primo, Barley, Nita, Colt, Bull, Brock, Jessie, Dynamike
+- Super Rare: Penny, Darryl, Rico, Carl, Jacky, 8-Bit
+- Epic: Piper, Pam, Frank, Bibi, Bea, Nani, Edgar, Griff, Grom, Bonnie, Gus, R-T, Pearl
+- Mythic: Mortis, Tara, Gene, Max, Mr. P, Sprout, Byron, Squeak, Lou, Ruffs, Belle, Buzz, Ash, Lola, Fang, Eve, Janet, Otis, Sam, Buster, Gray, Mandy, Willow, Maisie, Hank, Charlie, Mico, Melodie, Angelo, Draco, Lily
+- Legendary: Spike, Crow, Leon, Sandy, Amber, Meg, Chester, Cordelius, Doug, Chuck, Kenji
+- Chromatic: Gale, Surge, Colette, Lou (rotates down to Mythic over time)
+
+BRAWLER CATEGORIES & ROLES (across all rarities):
+- Tank: El Primo (Rare), Bull (Rare), Rosa (Rare), Frank (Epic), Jacky (Super Rare), Ash (Mythic)
+- Fighter: Bibi (Epic), Edgar (Epic), Fang (Mythic), Buzz (Mythic), Sam (Mythic)
+- Assassin: Mortis (Mythic), Crow (Legendary), Leon (Legendary), Stu (Chromatic)
+- Damage Dealer: Colt (Rare), Brock (Rare), 8-Bit (Super Rare), Rico (Super Rare), Mandy (Mythic)
+- Support: Poco (Rare), Pam (Epic), Byron (Mythic), Gus (Epic), Max (Mythic)
+- Sharpshooter: Piper (Epic), Bea (Epic), Belle (Mythic), Brock (Rare)
+- Thrower: Barley (Rare), Dynamike (Rare), Tick (Mythic), Sprout (Mythic)
+- Controller: Emz (Trophy Road), Gale (Chromatic), Mr. P (Mythic), Sandy (Legendary)
 
 CORE MECHANICS:
 - Ammo system: Most brawlers have 3 ammo slots that reload over time
@@ -68,11 +77,20 @@ STRATEGY TIPS:
 - Super cycling: Chain supers to maintain pressure
 - Counter-picking: Choose brawlers that counter enemy composition
 
+BRAWLER RECOMMENDATION GUIDELINES:
+- Consider ALL rarities when giving advice (Rare, Super Rare, Epic, Mythic, Legendary, Chromatic)
+- Recommend accessible brawlers (Rare/Super Rare) for beginners
+- Mention higher rarity alternatives but don't exclusively suggest them
+- Focus on effectiveness and availability, not just rarity
+- Example: For tanks, suggest El Primo (Rare) alongside Frank (Epic) and Ash (Mythic)
+- Always provide options across different rarity levels when possible
+
 CURRENT META TRENDS:
 - Meta shifts with balance changes and new brawler releases
 - Check tier lists regularly for competitive rankings
-- Strong brawlers typically have high HP, burst damage, or utility
+- Strong brawlers exist at ALL rarity levels (Colt, Poco, 8-Bit are meta-relevant)
 - Map-specific brawlers: Some excel on certain maps only
+- Rarity doesn't equal strength - many Rare/Super Rare brawlers are top-tier
 """
 
         personality_prompts = {
