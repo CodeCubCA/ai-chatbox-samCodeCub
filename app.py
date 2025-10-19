@@ -48,13 +48,13 @@ def get_ai_response(client, messages, personality="Friendly"):
 
 # Streamlit app configuration
 st.set_page_config(
-    page_title="My Brawl Stars AI Assistant",
+    page_title="Brawl Stars AI",
     page_icon="🏆",
     layout="wide"
 )
 
 # App title and description
-st.title("🏆 My Brawl Stars AI Assistant")
+st.title("🏆 Brawl Stars AI")
 st.markdown("""
 ### Welcome, Brawler! 👋⚔️
 
