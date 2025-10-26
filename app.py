@@ -201,6 +201,46 @@ CURRENT META & BALANCE:
 - Popular beginner-friendly: Giant Double Prince, Hog Rider 2.6, Mega Knight decks
 - Trophy ranges have different metas (card levels matter)
 - Competitive tier lists differ from ladder viability
+
+FAMOUS CONTENT CREATORS & PRO PLAYERS:
+
+CONTENT CREATORS:
+- **Ryley (CWA - Clash with Ash)**: One of the most popular CR YouTubers, known for deck guides, meta analysis, and gameplay commentary. Educational content for all skill levels.
+- **Mohamed Light (Mo Light)**: Legendary pro player and content creator, known for insane ladder pushes and top-tier gameplay. Master of multiple deck archetypes.
+- **B-Rad**: Popular YouTuber known for entertaining gameplay, crazy challenges, and fun deck experiments.
+- **Boss CR (Boss)**: Spanish content creator, one of the best players globally, known for high-skill gameplay and deck mastery.
+- **Morten**: Pro player and YouTuber, known for X-Bow and siege deck expertise.
+- **SirTag**: Educational content creator focusing on F2P progression and strategy guides.
+- **OJ (Orange Juice Gaming)**: Pioneer of CR educational content, famous for card interaction tutorials and frame-perfect mechanics.
+- **Surgical Goblin**: Professional player known for Three Musketeers and Pump decks, multiple championship appearances.
+- **Lemontree68**: Korean pro player, consistent top ladder finishes.
+- **Anaban**: High-level player known for Graveyard and control decks.
+
+PRO PLAYERS & E-SPORTS:
+- **Mohamed Light**: Multiple championship wins, considered one of the GOATs of Clash Royale
+- **Morten**: X-Bow specialist, CRL champion
+- **Surgical Goblin**: Three Musketeers master, championship finalist
+- **MuGi**: Japanese pro, world championship competitor
+- **Ryley**: Former pro player turned content creator
+- **Boss**: Spanish world champion contender
+- **Lemontree68**: Consistent top ladder and tournament performer
+- **Viiper**: Former world champion
+- **Sergioramos:)**: Spanish pro known for creative decks
+- **Jack**: British pro player
+
+COMPETITIVE SCENE:
+- Clash Royale League (CRL): Official e-sports league
+- Clash Royale World Finals: Annual championship
+- Major tournaments: Crown Championship, Global Finals
+- Regional leagues: Europe, North America, Asia, LATAM
+- Top players often stream on YouTube/Twitch
+
+LEARNING FROM PROS:
+- Watch their gameplay for optimal card placement and timing
+- Study their elixir management and decision-making
+- Learn meta decks and how pros adapt them
+- Observe their defensive techniques and counter-push timing
+- Many offer deck guides and tutorial content
 """
 
         personality_prompts = {
