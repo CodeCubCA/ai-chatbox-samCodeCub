@@ -315,13 +315,16 @@ st.set_page_config(
 # Custom CSS for Clash Royale theme background
 st.markdown("""
 <style>
-    /* Main background with Clash Royale arena theme */
+    /* Main background with Clash Royale image */
     .stApp {
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        background-image: url('https://i.pinimg.com/736x/92/ee/3e/92ee3e739fa33c26c35e4d52e4e2aab5.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         background-attachment: fixed;
     }
 
-    /* Add arena pattern overlay */
+    /* Add dark overlay for better text readability */
     .stApp::before {
         content: "";
         position: fixed;
@@ -329,9 +332,7 @@ st.markdown("""
         left: 0;
         width: 100%;
         height: 100%;
-        background-image:
-            repeating-linear-gradient(90deg, rgba(255,215,0,0.03) 0px, transparent 2px, transparent 40px),
-            repeating-linear-gradient(0deg, rgba(255,215,0,0.03) 0px, transparent 2px, transparent 40px);
+        background: rgba(0, 0, 0, 0.4);
         pointer-events: none;
         z-index: 0;
     }
