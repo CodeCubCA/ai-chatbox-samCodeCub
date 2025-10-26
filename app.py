@@ -272,6 +272,75 @@ st.set_page_config(
     layout="wide"
 )
 
+# Custom CSS for Clash Royale theme background
+st.markdown("""
+<style>
+    /* Main background with Clash Royale arena theme */
+    .stApp {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        background-attachment: fixed;
+    }
+
+    /* Add arena pattern overlay */
+    .stApp::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image:
+            repeating-linear-gradient(90deg, rgba(255,215,0,0.03) 0px, transparent 2px, transparent 40px),
+            repeating-linear-gradient(0deg, rgba(255,215,0,0.03) 0px, transparent 2px, transparent 40px);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    /* Chat messages styling */
+    .stChatMessage {
+        background-color: rgba(30, 30, 60, 0.85);
+        border: 2px solid rgba(255, 215, 0, 0.3);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+    }
+
+    /* Sidebar styling */
+    section[data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+        border-right: 3px solid rgba(255, 215, 0, 0.5);
+    }
+
+    /* Input box styling */
+    .stChatInputContainer {
+        border: 2px solid rgba(255, 215, 0, 0.4);
+        border-radius: 10px;
+        background-color: rgba(30, 30, 60, 0.7);
+    }
+
+    /* Headers with gold accent */
+    h1, h2, h3 {
+        color: #FFD700 !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    /* Button styling */
+    .stButton button {
+        background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+        color: white;
+        border: 2px solid #FFD700;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .stButton button:hover {
+        background: linear-gradient(135deg, #D2691E 0%, #CD853F 100%);
+        border-color: #FFA500;
+        transform: scale(1.05);
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # App title and description
 st.title("👑 Clash Royale AI")
 st.markdown("""
