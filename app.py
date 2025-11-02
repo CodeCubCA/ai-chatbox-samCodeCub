@@ -312,19 +312,29 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS for Clash Royale theme background
+# Custom CSS for Clash Royale theme background with epic arena
 st.markdown("""
 <style>
-    /* Main background with Clash Royale image */
+    /* Epic Clash Royale Arena background with Mega Knight theme */
     .stApp {
-        background-image: url('https://i.pinimg.com/736x/92/ee/3e/92ee3e739fa33c26c35e4d52e4e2aab5.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background:
+            radial-gradient(ellipse at 30% 20%, rgba(138, 43, 226, 0.4) 0%, transparent 50%),
+            radial-gradient(ellipse at 70% 80%, rgba(75, 0, 130, 0.4) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(138, 43, 226, 0.2) 0%, transparent 60%),
+            linear-gradient(135deg,
+                #0a0a1a 0%,
+                #1a0a2e 15%,
+                #2d1b4e 30%,
+                #3d2662 45%,
+                #2d1b4e 60%,
+                #1a0a2e 75%,
+                #0a0a1a 100%
+            );
         background-attachment: fixed;
+        position: relative;
     }
 
-    /* Add dark overlay for better text readability */
+    /* Lightning effects for Mega Knight theme */
     .stApp::before {
         content: "";
         position: fixed;
@@ -332,9 +342,46 @@ st.markdown("""
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.4);
+        background:
+            radial-gradient(ellipse at 20% 30%, rgba(147, 51, 234, 0.3) 0%, transparent 40%),
+            radial-gradient(ellipse at 80% 60%, rgba(168, 85, 247, 0.25) 0%, transparent 45%),
+            radial-gradient(circle at 50% 20%, rgba(196, 181, 253, 0.15) 0%, transparent 50%);
         pointer-events: none;
         z-index: 0;
+        animation: pulse 4s ease-in-out infinite;
+    }
+
+    /* Arena floor pattern */
+    .stApp::after {
+        content: "";
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background:
+            linear-gradient(180deg, transparent 0%, rgba(30, 20, 60, 0.6) 100%),
+            repeating-linear-gradient(90deg,
+                rgba(138, 43, 226, 0.1) 0px,
+                transparent 2px,
+                transparent 60px
+            ),
+            repeating-linear-gradient(0deg,
+                rgba(138, 43, 226, 0.1) 0px,
+                transparent 2px,
+                transparent 60px
+            );
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.7;
+        }
     }
 
     /* Chat messages styling */
