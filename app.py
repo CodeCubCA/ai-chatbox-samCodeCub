@@ -398,17 +398,40 @@ st.markdown("""
         border-right: 3px solid rgba(255, 215, 0, 0.5);
     }
 
-    /* Input box styling */
+    /* Input box styling with better visibility */
     .stChatInputContainer {
-        border: 2px solid rgba(255, 215, 0, 0.4);
+        border: 2px solid rgba(255, 215, 0, 0.6);
         border-radius: 10px;
-        background-color: rgba(30, 30, 60, 0.7);
+        background-color: rgba(20, 20, 40, 0.95) !important;
+    }
+
+    /* Input text color */
+    .stChatInputContainer input,
+    .stChatInputContainer textarea {
+        color: #FFFFFF !important;
+        background-color: rgba(40, 40, 80, 0.9) !important;
+    }
+
+    /* Placeholder text */
+    .stChatInputContainer input::placeholder,
+    .stChatInputContainer textarea::placeholder {
+        color: rgba(255, 255, 255, 0.6) !important;
     }
 
     /* Headers with gold accent */
     h1, h2, h3 {
         color: #FFD700 !important;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    /* All text should be visible */
+    p, span, div, label {
+        color: #FFFFFF !important;
+    }
+
+    /* Chat message text */
+    .stChatMessage p {
+        color: #FFFFFF !important;
     }
 
     /* Button styling */
