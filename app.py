@@ -312,142 +312,61 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS for Clash Royale theme background with epic arena
+# Custom CSS for Clash Royale theme background
 st.markdown("""
 <style>
-    /* Epic Clash Royale Arena background with Mega Knight theme */
+    /* Clash Royale Arena background */
     .stApp {
-        background:
-            radial-gradient(ellipse at 30% 20%, rgba(138, 43, 226, 0.4) 0%, transparent 50%),
-            radial-gradient(ellipse at 70% 80%, rgba(75, 0, 130, 0.4) 0%, transparent 50%),
-            radial-gradient(circle at 50% 50%, rgba(138, 43, 226, 0.2) 0%, transparent 60%),
-            linear-gradient(135deg,
-                #0a0a1a 0%,
-                #1a0a2e 15%,
-                #2d1b4e 30%,
-                #3d2662 45%,
-                #2d1b4e 60%,
-                #1a0a2e 75%,
-                #0a0a1a 100%
-            );
+        background: linear-gradient(135deg, #1a1a2e 0%, #2d1b4e 50%, #1a1a2e 100%);
         background-attachment: fixed;
-        position: relative;
     }
 
-    /* Lightning effects for Mega Knight theme */
-    .stApp::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background:
-            radial-gradient(ellipse at 20% 30%, rgba(147, 51, 234, 0.3) 0%, transparent 40%),
-            radial-gradient(ellipse at 80% 60%, rgba(168, 85, 247, 0.25) 0%, transparent 45%),
-            radial-gradient(circle at 50% 20%, rgba(196, 181, 253, 0.15) 0%, transparent 50%);
-        pointer-events: none;
-        z-index: 0;
-        animation: pulse 4s ease-in-out infinite;
-    }
-
-    /* Arena floor pattern */
-    .stApp::after {
-        content: "";
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 40%;
-        background:
-            linear-gradient(180deg, transparent 0%, rgba(30, 20, 60, 0.6) 100%),
-            repeating-linear-gradient(90deg,
-                rgba(138, 43, 226, 0.1) 0px,
-                transparent 2px,
-                transparent 60px
-            ),
-            repeating-linear-gradient(0deg,
-                rgba(138, 43, 226, 0.1) 0px,
-                transparent 2px,
-                transparent 60px
-            );
-        pointer-events: none;
-        z-index: 0;
-    }
-
-    @keyframes pulse {
-        0%, 100% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.7;
-        }
-    }
-
-    /* Chat messages styling */
+    /* Chat messages */
     .stChatMessage {
-        background-color: rgba(30, 30, 60, 0.85);
-        border: 2px solid rgba(255, 215, 0, 0.3);
-        border-radius: 10px;
-        backdrop-filter: blur(10px);
+        background-color: rgba(30, 30, 60, 0.9) !important;
+        border: 2px solid rgba(255, 215, 0, 0.3) !important;
+        border-radius: 10px !important;
+        color: #FFFFFF !important;
     }
 
-    /* Sidebar styling */
+    .stChatMessage * {
+        color: #FFFFFF !important;
+    }
+
+    /* Sidebar */
     section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
-        border-right: 3px solid rgba(255, 215, 0, 0.5);
+        background: #1a1a2e !important;
     }
 
-    /* Input box styling with better visibility */
+    section[data-testid="stSidebar"] * {
+        color: #FFFFFF !important;
+    }
+
+    /* Input box */
     .stChatInputContainer {
-        border: 2px solid rgba(255, 215, 0, 0.6);
-        border-radius: 10px;
         background-color: rgba(20, 20, 40, 0.95) !important;
     }
 
-    /* Input text color */
-    .stChatInputContainer input,
-    .stChatInputContainer textarea {
+    .stChatInputContainer input {
         color: #FFFFFF !important;
         background-color: rgba(40, 40, 80, 0.9) !important;
     }
 
-    /* Placeholder text */
-    .stChatInputContainer input::placeholder,
-    .stChatInputContainer textarea::placeholder {
-        color: rgba(255, 255, 255, 0.6) !important;
-    }
-
-    /* Headers with gold accent */
+    /* Headers */
     h1, h2, h3 {
         color: #FFD700 !important;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
 
-    /* All text should be visible */
-    p, span, div, label {
+    /* All text white */
+    p, span, div, label, li {
         color: #FFFFFF !important;
     }
 
-    /* Chat message text */
-    .stChatMessage p {
-        color: #FFFFFF !important;
-    }
-
-    /* Button styling */
+    /* Buttons */
     .stButton button {
-        background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
-        color: white;
-        border: 2px solid #FFD700;
-        border-radius: 8px;
-        font-weight: bold;
-        transition: all 0.3s ease;
-    }
-
-    .stButton button:hover {
-        background: linear-gradient(135deg, #D2691E 0%, #CD853F 100%);
-        border-color: #FFA500;
-        transform: scale(1.05);
+        background: #8B4513 !important;
+        color: white !important;
+        border: 2px solid #FFD700 !important;
     }
 </style>
 """, unsafe_allow_html=True)
