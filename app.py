@@ -1,23 +1,24 @@
 import streamlit as st
 import os
-from groq import Groq
+import google.generativeai as genai
 from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
 
-# Initialize Groq client
-def init_groq_client():
-    """Initialize Groq API client with API key from environment variables"""
-    api_key = os.getenv("GROQ_API_KEY")
+# Initialize Gemini client
+def init_gemini_client():
+    """Initialize Gemini API client with API key from environment variables"""
+    api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
-        st.error("GROQ_API_KEY not found in environment variables!")
+        st.error("GEMINI_API_KEY not found in environment variables!")
         st.stop()
-    return Groq(api_key=api_key)
+    genai.configure(api_key=api_key)
+    return genai.GenerativeModel('gemini-1.5-flash')
 
 # Function to get AI response
-def get_ai_response(client, messages, personality="Friendly"):
-    """Get response from Groq AI model with personality adjustment"""
+def get_ai_response(model, messages, personality="Friendly"):
+    """Get response from Gemini AI model with personality adjustment"""
     try:
         # Define personality-specific system messages with detailed Clash Royale knowledge
         clash_royale_context = """
@@ -287,21 +288,36 @@ You are a fun and humorous Clash Royale expert who makes learning enjoyable!
 """
         }
 
-        system_message = {
-            "role": "system",
-            "content": personality_prompts.get(personality, personality_prompts["Friendly"])
-        }
+        # Get system prompt based on personality
+        system_prompt = personality_prompts.get(personality, personality_prompts["Friendly"])
 
-        # Prepare messages with system context
-        full_messages = [system_message] + messages
+        # Format chat history for Gemini
+        chat_history = []
+        for msg in messages:
+            if msg["role"] == "user":
+                chat_history.append({"role": "user", "parts": [msg["content"]]})
+            elif msg["role"] == "assistant":
+                chat_history.append({"role": "model", "parts": [msg["content"]]})
 
-        response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=full_messages,
-            temperature=0.7,
-            max_tokens=1024
+        # Start chat with system prompt as first message
+        chat = model.start_chat(history=[])
+
+        # Combine system prompt with first user message
+        if chat_history:
+            first_user_msg = chat_history[-1]["parts"][0] if chat_history[-1]["role"] == "user" else ""
+            full_prompt = f"{system_prompt}\n\nUser question: {first_user_msg}"
+        else:
+            full_prompt = system_prompt
+
+        # Generate response
+        response = chat.send_message(
+            full_prompt,
+            generation_config=genai.types.GenerationConfig(
+                temperature=0.7,
+                max_output_tokens=1024,
+            )
         )
-        return response.choices[0].message.content
+        return response.text
     except Exception as e:
         return f"Error: {str(e)}"
 
@@ -390,8 +406,8 @@ I'm your dedicated Clash Royale AI companion, here to help you dominate every ba
 Let's dominate the Arena together! Ask me anything about Clash Royale! 🚀
 """)
 
-# Initialize Groq client
-client = init_groq_client()
+# Initialize Gemini model
+model = init_gemini_client()
 
 # Initialize session state for chat history and personality
 if "messages" not in st.session_state:
@@ -416,7 +432,7 @@ if prompt := st.chat_input("Ask about Clash Royale decks, strategies, cards, or 
     # Get AI response
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
-            response = get_ai_response(client, st.session_state.messages, st.session_state.personality)
+            response = get_ai_response(model, st.session_state.messages, st.session_state.personality)
             st.markdown(response)
 
     # Add assistant response to chat history
