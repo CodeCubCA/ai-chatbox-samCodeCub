@@ -14,7 +14,8 @@ def init_gemini_client():
         st.error("GEMINI_API_KEY not found in environment variables!")
         st.stop()
     genai.configure(api_key=api_key)
-    return genai.GenerativeModel('gemini-1.5-pro')
+    # Try gemini-1.5-flash-latest which is the stable model name
+    return genai.GenerativeModel('gemini-1.5-flash-latest')
 
 # Function to get AI response
 def get_ai_response(model, messages, personality="Friendly"):
