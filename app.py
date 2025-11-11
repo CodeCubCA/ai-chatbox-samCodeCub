@@ -134,15 +134,124 @@ CORE MECHANICS:
 - Prediction: Placing spells/troops before opponent deploys their counter
 - King Tower Activation: Triggering King Tower to help defend (using Tornado, etc.)
 
-ADVANCED STRATEGY & DECK BUILDING:
-- Deck Composition: 8 cards with balanced roles (win condition, spells, support, counters)
-- Average Elixir Cost: Aim for 3.0-4.0 (lower = faster cycle, higher = stronger pushes)
-- Win Condition: At least 1 reliable tower damage card (Hog, Giant, Balloon, etc.)
-- Spells: Include 2-3 spells (small, medium, big spell for versatility)
-- Air Defense: Must have anti-air cards (Musketeer, Mega Minion, arrows, etc.)
-- Tank Killer: High DPS for enemy tanks (Mini P.E.K.K.A, Inferno Dragon/Tower)
-- Synergies: Cards that combo well (Giant + Witch, Lava Hound + Balloon, etc.)
-- Versatility: Cards serving multiple purposes (Knight defends and counter-pushes)
+ADVANCED STRATEGY & DECK BUILDING (COMPREHENSIVE GUIDE):
+
+DECK BUILDING FUNDAMENTALS:
+1. **Core Components Every Deck Needs:**
+   - Win Condition (1-2 cards): Primary tower damage dealer (Hog Rider, Giant, Balloon, Miner, X-Bow, Graveyard, etc.)
+   - Tank/Mini-Tank (1-2 cards): Absorbs damage for pushes (Knight, Valkyrie, Giant, Golem)
+   - Splash Damage (1-2 cards): Clears swarms (Baby Dragon, Wizard, Valkyrie, Arrows, Fireball)
+   - Anti-Air (1-2 cards): Defends air threats (Musketeer, Mega Minion, Bats, Archers)
+   - Small Spell (1 card): Cycle and swarm clear (Log, Zap, Arrows, Snowball)
+   - Medium/Heavy Spell (1 card): Tower damage and defensive reset (Fireball, Rocket, Lightning, Poison)
+   - Defensive Building (0-1 card): Pulls troops, protects towers (Tesla, Cannon, Inferno Tower)
+   - Support/Utility (1-2 cards): Versatile cards (Electro Wizard, Ice Spirit, Skeletons)
+
+2. **Average Elixir Cost Guidelines:**
+   - Fast Cycle (2.6-3.2): Quick rotation to win condition, requires high skill
+   - Balanced (3.3-3.8): Most versatile, good for ladder and challenges
+   - Beatdown (3.9-4.5): Heavy pushes, requires good elixir management
+   - Above 4.5: Very risky, slow cycle, vulnerable to faster decks
+
+3. **Deck Archetypes Explained:**
+
+   A) **BEATDOWN** (Build big pushes from back)
+   - Strategy: Tank in back, support behind, overwhelm opponent
+   - Win Conditions: Golem, Giant, Lava Hound, Mega Knight, Electro Giant
+   - Support Cards: Night Witch, Baby Dragon, Lumberjack, Electro Dragon
+   - Example Deck: Golem, Night Witch, Baby Dragon, Tornado, Lightning, Lumberjack, Mega Minion, Skeletons
+   - Key Skills: Elixir management, knowing when to commit, defending with less
+   - Best Against: Siege, Bait decks
+   - Weak Against: Fast cycle, Inferno Tower/Dragon
+
+   B) **CYCLE** (Fast rotation to win condition)
+   - Strategy: Cycle cheap cards to spam win condition repeatedly
+   - Win Conditions: Hog Rider, Miner, Royal Hogs, Wall Breakers
+   - Cycle Cards: Ice Spirit, Skeletons, Log, Ice Golem (1-2 elixir cards)
+   - Example Deck: Hog Rider 2.6 (Hog, Musketeer, Cannon, Ice Golem, Ice Spirit, Fireball, Log, Skeletons)
+   - Key Skills: Fast reactions, elixir counting, precise placement
+   - Best Against: Beatdown, slower decks
+   - Weak Against: Splash damage, heavy spell decks
+
+   C) **CONTROL** (Defend and counter-push)
+   - Strategy: Control tempo with strong defense, punish with counter-pushes
+   - Win Conditions: Miner, Graveyard, Hog Rider with heavy support
+   - Defense: Tesla, Cannon Cart, Valkyrie, Knight
+   - Example Deck: Miner, Poison, Valkyrie, Bats, Spear Goblins, Tesla, Log, Ice Spirit
+   - Key Skills: Defending efficiently, elixir advantage, patience
+   - Best Against: Beatdown, Bridge Spam
+   - Weak Against: Spell chip cycle, outcycle decks
+
+   D) **SIEGE** (Attack from your side)
+   - Strategy: Deploy building that attacks tower from your territory
+   - Win Conditions: X-Bow, Mortar
+   - Defense: Tesla, Knight, Archers, Ice Spirit, Skeletons
+   - Example Deck: X-Bow 3.0 (X-Bow, Tesla, Knight, Archers, Ice Spirit, Skeletons, Fireball, Log)
+   - Key Skills: Building placement, defensive mastery, prediction
+   - Best Against: Beatdown, control
+   - Weak Against: Earthquake, Lightning, Rocket, Bridge Spam
+
+   E) **BAIT** (Bait out counters, then punish)
+   - Strategy: Use multiple cards that die to same spell, bait it out, then exploit
+   - Sub-Types: Log Bait (Goblin Barrel focus), Fireball Bait (multiple Fireball-vulnerable troops)
+   - Example Log Bait: Goblin Barrel, Princess, Goblin Gang, Rocket, Knight, Ice Spirit, Inferno Tower, Log
+   - Key Skills: Tracking opponent's spells, knowing when they're out of cycle
+   - Best Against: Heavy spell decks, beatdown
+   - Weak Against: Multiple small spells, splash damage
+
+   F) **BRIDGE SPAM** (Fast aggressive pushes at bridge)
+   - Strategy: Deploy troops directly at bridge for immediate pressure
+   - Win Conditions: Battle Ram, Ram Rider, Bandit, Royal Ghost
+   - Support: Dark Prince, Magic Archer, Electro Wizard, Pekka
+   - Example Deck: Pekka Bridge Spam (Pekka, Battle Ram, Bandit, Magic Archer, Ewiz, Zap, Poison, Royal Ghost)
+   - Key Skills: Pressure timing, knowing when to defend vs attack
+   - Best Against: Siege, slow decks, beatdown
+   - Weak Against: Cycle decks, swarm spam
+
+4. **PRO-LEVEL DECK BUILDING TIPS:**
+
+   **Elixir Curve Balance:**
+   - Don't have too many high-cost cards (can't defend multiple threats)
+   - Include 2-3 cards that cost 3 elixir or less for cycling
+   - Avoid having all your counters be expensive
+
+   **Versatility and Flex Cards:**
+   - Knight: Defense + counter-push, tanks for support troops
+   - Musketeer: Air defense + DPS + ranged support
+   - Mega Minion: Air defense + tank killer + survives spells
+   - Valkyrie: Splash + mini-tank + counter-push
+
+   **Spell Synergies:**
+   - Zap + Arrows: Covers all swarms (overkill, usually avoid)
+   - Log + Fireball: Most versatile combo (ground swarm + medium troops)
+   - Arrows + Poison: Anti-air swarm + area denial
+   - Zap + Rocket: Quick chip + heavy damage finisher
+
+   **Matchup Coverage:**
+   - Anti-Swarm: Splash units or small spells (vs Goblin Gang, Skarmy)
+   - Anti-Tank: High DPS or Inferno (vs Golem, Giant, Mega Knight)
+   - Anti-Air: Ranged units or air-targeting (vs Balloon, Lava Hound)
+   - Building Counter: Earthquake, Lightning, or pressure opposite lane
+
+   **Card Synergies (Combos That Work):**
+   - Giant + Witch: Tank + splash support
+   - Lava Hound + Balloon: Double air pressure (Lavaloon)
+   - Golem + Night Witch: Tank + spawn spam support
+   - Hog + Freeze: Instant tower damage before counter
+   - Miner + Poison: Spell bait tank + area denial
+   - Graveyard + Freeze: Skeleton spam + counter freeze
+   - X-Bow + Tesla: Double building defense
+   - Balloon + Lumberjack: Rage on death buff
+
+   **Common Deck Building Mistakes:**
+   - No clear win condition (no reliable tower damage)
+   - Too many expensive cards (can't cycle or defend efficiently)
+   - No air defense (instant loss to Balloon/Lava Hound)
+   - No building (hard to defend tanks and Hog)
+   - Only one spell (not enough versatility)
+   - Cards with overlapping roles (redundant, wastes deck slot)
+   - No tank killer (can't stop Golem/Giant pushes)
+   - Average elixir above 4.5 (too slow)
 
 ELIXIR MANAGEMENT MASTERY:
 - Count opponent's elixir (track what they play)
@@ -236,12 +345,108 @@ COMPETITIVE SCENE:
 - Regional leagues: Europe, North America, Asia, LATAM
 - Top players often stream on YouTube/Twitch
 
+PRO PLAYER STRATEGIES & TECHNIQUES:
+
+1. **ELIXIR COUNTING (Essential Pro Skill):**
+   - Track EVERY card opponent plays and calculate their elixir
+   - Start: Both players begin with 5 elixir
+   - If opponent plays 8 elixir of cards, they have ~2-3 elixir left
+   - Punish when they're low (play Hog Rider when they have 3 elixir)
+   - Don't overcommit when YOU'RE low on elixir
+   - In 2x elixir, counting becomes harder but even more important
+
+2. **CARD CYCLING MASTERY:**
+   - Know your deck cycle order (what cards come next)
+   - Cycle cheap cards to get back to win condition faster
+   - Example: If Hog is 4 cards away, play Ice Spirit + Skeletons to get it faster
+   - "Out-cycling" = rotating back to counter before opponent gets their win condition
+   - Pros intentionally cycle to have the right cards at the right time
+
+3. **DEFENSIVE POSITIONING (Pro Placements):**
+   - **Kiting**: Place troop in center to pull enemy troops between both towers
+     - Example: Kite Mega Knight or Pekka with Knight in middle
+   - **Anti-Lightning Spread**: Don't clump units (Lightning can't hit multiple)
+   - **Building Placement**:
+     - Center plant (pulls Hog, Giant to middle for both towers)
+     - Opposite lane plant (forces long walk, buys time)
+   - **Troop Surround**: Place troops in square around tank to DPS it down
+   - **Split Push Counter**: Put 1 cheap troop on pressure lane, defend other side
+
+4. **OFFENSIVE TIMING (When Pros Attack):**
+   - **Elixir Advantage Push**: When you have +3-4 elixir advantage
+   - **Counter Push**: Support surviving defensive troops
+   - **Double Lane Pressure**: Force opponent to choose which lane to defend
+   - **Spell Chip**: Rocket/Fireball cycling when can't break through
+   - **Prediction Plays**: Pre-place Log/Arrows before opponent drops swarm
+   - **Opposite Lane Rush**: Push opposite when opponent commits 8+ elixir one side
+   - **2x Elixir Timing**: Save elixir right before 2x, then unleash huge push
+
+5. **MATCHUP KNOWLEDGE (How Pros Win Bad Matchups):**
+   - Know your deck's counters and what you struggle against
+   - Play defensively in bad matchups, chip with spells
+   - Force opponent to make mistakes (bait spells, outcycle counters)
+   - Example: Hog 2.6 vs Golem = defend and outcycle their counters
+   - Don't over-commit on attack if you can't break through
+   - Focus on 1-crown win, tower trade, or draw if necessary
+
+6. **MOMENTUM CONTROL:**
+   - Pros take risks when ahead (more aggressive)
+   - Pros play safe when behind (defend, spell chip, wait for mistake)
+   - Don't tilt = stay calm after bad play, refocus
+   - Force opponent to respond to YOU (constant pressure)
+
+7. **MOHAMED LIGHT'S LADDER SECRETS:**
+   - Master 1-2 decks completely (don't switch constantly)
+   - Learn micro-interactions (Ice Spirit timing, Zap timing)
+   - Predict opponent patterns (if they always Log barrel, pre-place troops)
+   - Never BM until after match (keep mental advantage)
+   - Take breaks after losses (don't tilt queue)
+   - Review replays of losses to learn mistakes
+
+8. **MORTEN'S X-BOW MASTERY TIPS:**
+   - Defensive X-Bow = place for chip damage when can't commit
+   - Offensive X-Bow = place when opponent low on elixir or without counter
+   - Tesla + X-Bow = double building defense is nearly unbreakable
+   - Cycle pressure = always have answer to opponent's push
+   - Fireball cycle in overtime when X-Bow can't connect
+
+9. **BOSS CR'S AGGRESSIVE TACTICS:**
+   - Never give opponent breathing room (constant pressure)
+   - Punish EVERY elixir mistake immediately
+   - Take tower trades if favorable (sacrifice 1 tower for 2)
+   - Know when to spell cycle for win instead of forcing push
+   - Mind games = sometimes don't play predictably (switch lanes unexpectedly)
+
+10. **SURGICAL GOBLIN'S 3M PUMP STRATEGY:**
+    - Pump in back when safe (elixir advantage over time)
+    - Split 3M at bridge (force opponent to defend both lanes)
+    - Battle Ram + Musketeers combo (tank + DPS)
+    - Elixir Collector baiting (opponent must choose: destroy pump or defend push)
+
+11. **PRO-LEVEL MICRO SKILLS:**
+    - **Zap Timing**: Reset Inferno, Sparky RIGHT before they shoot
+    - **Prediction Spell**: Log/Arrows BEFORE opponent drops swarm
+    - **Troop Surround**: 4-corner placement around tank
+    - **Tower Target Switch**: Use 1 elixir troops to redirect attacks
+    - **Spell Baiting**: Show bait card, make opponent waste spell, then punish
+    - **Frame-Perfect Timing**: Freeze right as tower is about to die to Balloon
+
+12. **MENTAL GAME (Pro Mindset):**
+    - Every loss is a learning opportunity
+    - Don't focus on card levels (focus on outplaying)
+    - Stay calm = better decisions
+    - Emote mute if tilting
+    - Know when to stop playing (after 2-3 losses in a row)
+    - Confidence without arrogance
+
 LEARNING FROM PROS:
-- Watch their gameplay for optimal card placement and timing
-- Study their elixir management and decision-making
-- Learn meta decks and how pros adapt them
-- Observe their defensive techniques and counter-push timing
-- Many offer deck guides and tutorial content
+- **Watch Pro Streams/Videos**: Mohamed Light, Morten, Boss, Surgical Goblin
+- **Study Replays**: Analyze why pros make specific plays
+- **Practice Specific Skills**: Kiting, elixir counting, prediction spells
+- **Join Competitive Clans**: Learn from high-level players
+- **Follow Meta Changes**: Pros adapt quickly to balance updates
+- **Copy Pro Decks**: Use exact deck pros use, learn why each card is there
+- **Tournament Practice**: Watch CRL, World Finals for highest level gameplay
 """
 
         personality_prompts = {
