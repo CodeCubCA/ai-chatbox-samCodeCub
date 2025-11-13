@@ -504,22 +504,22 @@ You are a fun and humorous Clash Royale expert who makes learning enjoyable!
             elif msg["role"] == "assistant":
                 chat_history.append({"role": "model", "parts": [msg["content"]]})
 
-        # Start chat with system prompt as first message
-        chat = model.start_chat(history=[])
-
-        # Combine system prompt with first user message
-        if chat_history:
-            first_user_msg = chat_history[-1]["parts"][0] if chat_history[-1]["role"] == "user" else ""
-            full_prompt = f"{system_prompt}\n\nUser question: {first_user_msg}"
+        # Get the last user message
+        if chat_history and chat_history[-1]["role"] == "user":
+            user_message = chat_history[-1]["parts"][0]
         else:
-            full_prompt = system_prompt
+            user_message = "Hello!"
 
-        # Generate response
-        response = chat.send_message(
+        # Combine system prompt with user message
+        full_prompt = f"{system_prompt}\n\nUser question: {user_message}\n\nProvide a helpful, accurate response based on the Clash Royale knowledge above:"
+
+        # Generate response with proper config
+        response = model.generate_content(
             full_prompt,
             generation_config=genai.types.GenerationConfig(
-                temperature=0.7,
-                max_output_tokens=1024,
+                temperature=0.8,
+                max_output_tokens=2048,
+                top_p=0.95,
             )
         )
         return response.text
