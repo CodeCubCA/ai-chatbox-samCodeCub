@@ -539,12 +539,31 @@ st.markdown("""
     /* Clash Royale Arena background */
     .stApp {
         background:
-            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('https://i.imgur.com/8QZ9YXm.jpg');
-        background-size: cover;
-        background-position: center;
+            radial-gradient(circle at 20% 50%, rgba(138, 43, 226, 0.3) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(75, 0, 130, 0.3) 0%, transparent 50%),
+            linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
         background-attachment: fixed;
-        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+
+    /* Arena-style decorative overlay */
+    .stApp::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:
+            repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 100px,
+                rgba(255, 215, 0, 0.03) 100px,
+                rgba(255, 215, 0, 0.03) 101px
+            );
+        pointer-events: none;
+        z-index: 1;
     }
 
     /* Chat messages */
