@@ -538,8 +538,13 @@ st.markdown("""
 <style>
     /* Clash Royale Arena background */
     .stApp {
-        background: linear-gradient(135deg, #1a1a2e 0%, #2d1b4e 50%, #1a1a2e 100%);
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('https://i.imgur.com/8QZ9YXm.jpg');
+        background-size: cover;
+        background-position: center;
         background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 
     /* Chat messages */
