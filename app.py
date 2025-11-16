@@ -542,7 +542,22 @@ You are a fun and humorous Clash Royale expert who makes learning enjoyable!
             ),
             safety_settings=safety_settings
         )
-        return response.text
+
+        # Check if response was blocked and handle it
+        if response.candidates:
+            return response.text
+        else:
+            # If blocked, try with a simplified prompt
+            simple_prompt = f"As a Clash Royale game expert, answer this question about the mobile game: {user_message}"
+            retry_response = model.generate_content(
+                simple_prompt,
+                generation_config=genai.types.GenerationConfig(
+                    temperature=0.7,
+                    max_output_tokens=2048,
+                ),
+                safety_settings=safety_settings
+            )
+            return retry_response.text
     except Exception as e:
         return f"Error: {str(e)}"
 
