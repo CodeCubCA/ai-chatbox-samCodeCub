@@ -513,14 +513,34 @@ You are a fun and humorous Clash Royale expert who makes learning enjoyable!
         # Combine system prompt with user message
         full_prompt = f"{system_prompt}\n\nUser question: {user_message}\n\nProvide a helpful, accurate response based on the Clash Royale knowledge above:"
 
-        # Generate response with proper config
+        # Generate response with proper config and safety settings
+        safety_settings = [
+            {
+                "category": "HARM_CATEGORY_HARASSMENT",
+                "threshold": "BLOCK_NONE"
+            },
+            {
+                "category": "HARM_CATEGORY_HATE_SPEECH",
+                "threshold": "BLOCK_NONE"
+            },
+            {
+                "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                "threshold": "BLOCK_NONE"
+            },
+            {
+                "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                "threshold": "BLOCK_NONE"
+            }
+        ]
+
         response = model.generate_content(
             full_prompt,
             generation_config=genai.types.GenerationConfig(
                 temperature=0.8,
                 max_output_tokens=2048,
                 top_p=0.95,
-            )
+            ),
+            safety_settings=safety_settings
         )
         return response.text
     except Exception as e:
