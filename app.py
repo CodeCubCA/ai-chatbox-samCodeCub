@@ -510,8 +510,8 @@ You are a fun and humorous Clash Royale expert who makes learning enjoyable!
         else:
             user_message = "Hello!"
 
-        # Combine system prompt with user message
-        full_prompt = f"{system_prompt}\n\nUser question: {user_message}\n\nProvide a helpful, accurate response based on the Clash Royale knowledge above:"
+        # Use simplified prompt to avoid safety filter issues
+        full_prompt = f"You are a Clash Royale game expert. Answer this question about the mobile strategy game Clash Royale: {user_message}"
 
         # Generate response with proper config and safety settings
         safety_settings = [
